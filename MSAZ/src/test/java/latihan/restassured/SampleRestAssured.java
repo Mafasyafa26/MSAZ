@@ -19,25 +19,25 @@ public class SampleRestAssured {
 		baseURI = "http://localhost:3000";
 	}
 	
-//	@Test (priority=0)
-//	public void testPost() 
-//	{
-//		req.put("first_name", "Mafasyafa");
-//		req.put("last_name", "Annisa");
-//		req.put("subject_id", 1);
-//		
-//		given(). //lampirkan
-//			header("Content-Type","application.json").
-//			accept(ContentType.JSON).
-//			contentType(ContentType.JSON).
-//			body(req.toJSONString()).
-//		when().
-//			post("/users").
-//		then().
-//			statusCode(200).
-//			log().
-//			all();
-//	}
+	@Test (priority=0)
+	public void testPost() 
+	{
+		req.put("first_name", "Mafasyafa");
+		req.put("last_name", "Annisa");
+		req.put("subject_id", 1);
+		
+		given(). //lampirkan
+			header("Content-Type","application.json").
+			accept(ContentType.JSON).
+			contentType(ContentType.JSON).
+			body(req.toJSONString()).
+		when().
+			post("/users").
+		then().
+			statusCode(200).
+			log().
+			all();
+	}
 	
 //	@Test(priority=1)
 //	public void testGet()
