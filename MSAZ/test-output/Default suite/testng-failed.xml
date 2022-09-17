@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tugas.selenium.demoqa.util.demoqa.TestPracticeForm">
+      <class name="ujian.ujiankeempat.openweather.ByLatLon">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="testValidLogin"/>
-          <include name="pageObject"/>
+          <include name="befTest"/>
+          <include name="testGet"/>
         </methods>
-      </class> <!-- tugas.selenium.demoqa.util.demoqa.TestPracticeForm -->
+      </class> <!-- ujian.ujiankeempat.openweather.ByLatLon -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

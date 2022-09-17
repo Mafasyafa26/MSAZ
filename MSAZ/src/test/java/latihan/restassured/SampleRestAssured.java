@@ -39,19 +39,19 @@ public class SampleRestAssured {
 			all();
 	}
 	
-//	@Test(priority=1)
-//	public void testGet()
-////	ambil data
-//	{
-////		?id=4&
-//		given().
-//		param("first_name","Aditya"). 
-//		get("/users/2"). //tanpa param
-//		then().
-//		statusCode(200).
-//		log().
-//		all();
-//	}
+	@Test(priority=1)
+	public void testGet()
+//	ambil data
+	{
+//		?id=4&
+		given().
+		param("first_name","Aditya"). 
+		get("/users/2"). //tanpa param
+		then().
+		statusCode(200).
+		log().
+		all();
+	}
 	
 //	@Test (priority=2)
 //	public void testPatch() 
