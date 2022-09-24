@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ujian.ujiankeempat.openweather.ByLatLon">
+      <class name="ujian.ujiankelima.selenium.MyAccTest">
         <methods>
-          <include name="befTest"/>
-          <include name="testGet"/>
+          <include name="testKlik"/>
+          <include name="pageObject"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- ujian.ujiankeempat.openweather.ByLatLon -->
+      </class> <!-- ujian.ujiankelima.selenium.MyAccTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

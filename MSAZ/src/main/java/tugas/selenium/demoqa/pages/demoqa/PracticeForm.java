@@ -106,7 +106,7 @@ private WebDriver driver;
 		selectedItemState.get(0).click();
 		Thread.sleep(1000);
 		city.click();
-		Thread.sleep(1000);
+		Thread.sleep(1000); 
 		List<WebElement> selectedItemCity = driver.findElements(By.id("react-select-4-option-1"));
 		selectedItemCity.get(0).click();
 		Thread.sleep(1000);
