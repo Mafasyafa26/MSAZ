@@ -18,18 +18,17 @@ public class GenerateDataDynamic {
 		System.out.println("=======================");
 		System.out.println("======== FIRST ========");
 		System.out.println("=======================");
-		System.out.println("Random Integer");
+		System.out.println("=== Random Integer ===");
 		System.out.println("=======================");
 		intRandom(hasil, awal, akhir);
 		System.out.println("=======================\n");
 		
-		System.out.println("=======================");
-		System.out.println("Random Double");
+		System.out.println("======================="); 
+		System.out.println("==== Random Double ====");
 		System.out.println("=======================");
 		doubRandom(hasil, awal, akhir);
 		System.out.println("=======================\n");
 	}
-	
 	
 	public static void intRandom(int jumlahData, int indexAwal, int indexAkhir) {
 		System.out.println("Jumlah Data: " + jumlahData);

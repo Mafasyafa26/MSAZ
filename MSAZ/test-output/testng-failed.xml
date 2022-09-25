@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ujian.ujiankelima.selenium.MyAccTest">
+      <class name="ujian.ujiankelima.cucumber.RoadRunner">
         <methods>
-          <include name="testKlik"/>
-          <include name="pageObject"/>
-          <include name="closeBrowser"/>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0 1 2 3 4 5 6 7"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- ujian.ujiankelima.selenium.MyAccTest -->
+      </class> <!-- ujian.ujiankelima.cucumber.RoadRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

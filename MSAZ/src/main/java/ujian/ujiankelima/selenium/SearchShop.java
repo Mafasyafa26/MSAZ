@@ -3,6 +3,7 @@ package ujian.ujiankelima.selenium;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -12,12 +13,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import ujian.ujiankeempat.nopcommerce.drivers.DriverSingleton;
+import ujian.ujiankeempat.nopcommerce.util.Constants;
 
 public class SearchShop {
 private WebDriver driver;
+private String strDelay = Constants.GLOB_PARAM_DELAY;
 	
 	public SearchShop() {
 		this.driver = DriverSingleton.getDriver();
@@ -50,26 +55,28 @@ private WebDriver driver;
 //	Page Object
 	public void db(String searchKey) throws InterruptedException, AWTException {
 		searchBtn.click();
-		Thread.sleep(1000);
+		Constants.delay(3, strDelay);
 		this.searchKey.sendKeys(searchKey);
-		Thread.sleep(1000);
+		Constants.delay(3, strDelay);
 		this.searchKey.sendKeys(Keys.ENTER);
-	    Thread.sleep(1000);
+		Constants.delay(3, strDelay);
 	    pilColor.click();
 	    Select pilColor = new Select(driver.findElement(By.id("pa_color")));
 		pilColor.selectByVisibleText("Black");
-	    Thread.sleep(1000);
+		Constants.delay(3, strDelay);
 	    pilSize.click();
 	    Select pilSize = new Select(driver.findElement(By.id("pa_size")));
 		pilSize.selectByVisibleText("Large");
-		Thread.sleep(1000);
+		Constants.delay(3, strDelay);
 	    qtyAdd.click();
-	    Thread.sleep(1000);
+	    Constants.delay(3, strDelay);
 	    btnAdd.click();
 	}
 	
 	
 	public String getTxtProduct() { //menampilkan laman selanjutnya
-		return txtNew.getText();
+//		return txtNew.getText();
+		return new WebDriverWait(driver, Duration.ofSeconds(10))
+				.until(ExpectedConditions.visibilityOf(txtNew)).getText();
 	}
 }

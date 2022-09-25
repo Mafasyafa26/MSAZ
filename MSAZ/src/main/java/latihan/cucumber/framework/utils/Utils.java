@@ -23,5 +23,17 @@ public class Utils {
 		File finalDestination = new File(destination);
 		FileUtils.copyFile(source, finalDestination);
 		return destination;
-}
+		}
+	
+	public static void delay(int detik, String delays) {
+		if(delays.equals("y"))
+		{
+			try {
+				Thread.sleep(1000*detik);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}		
+	}
 }

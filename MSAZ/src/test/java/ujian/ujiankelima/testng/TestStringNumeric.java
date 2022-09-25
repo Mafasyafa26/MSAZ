@@ -39,8 +39,8 @@ public class TestStringNumeric {
 		AssertJUnit.assertEquals(sN.testParseToIntActual(strInput), sN.testParseToIntExpect(strInput));
 	}
 //	ketika input bernilai bilangan bulat maka akan menghasilkan output true karena merupakan tipe data integer
-//	namun jika input string akan menghasilkan false karena string di convert ke int
-//	jika input char akan menghasilkan false karena char mengandung karakter sedangkan output yang diminta adalah int
+//	namun jika input string akan menghasilkan false karena output yang diminta bertipe integer
+//	jika input char akan menghasilkan false karena char mengandung karakter sedangkan output yang diminta adalah integer
 //	input double akan menghasilkan false karena harusnya bernilai output integer
 	
 	

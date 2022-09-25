@@ -10,16 +10,16 @@ import org.testng.annotations.Test;
 import ujian.ujiankeempat.nopcommerce.drivers.DriverSingleton;
 import ujian.ujiankeempat.nopcommerce.util.Constants;
 
-public class MyAccTest {
+public class ShopLadiesTest {
 	public static WebDriver driver;
-	private MyAcc myAcc;
+	private ShopLadies shopLadies;
 	
 	@BeforeMethod
 	public void pageObject() {
 		DriverSingleton.getInstance(Constants.CHROME);
 		driver = DriverSingleton.getDriver();
 		driver.get(Constants.URLS);
-		myAcc = new MyAcc();
+		shopLadies = new ShopLadies();
 	}
 	
 	@AfterMethod
@@ -28,24 +28,11 @@ public class MyAccTest {
 		DriverSingleton.closeObjectInstance();
 	}
 	
-//	Case 1 -> Login Error
+//	Case 1
 	@Test (priority = 0)
-	public void testLogin() throws InterruptedException { 
-		myAcc.acc("admin123" , "admin");
-		assertTrue(myAcc.getTxtLogin().contains("ERROR"));
+	public void testKlik() throws InterruptedException { 
+		shopLadies.shopLad();
+		assertTrue(shopLadies.getTxtProduct().contains("PLAYBOY X MISSGUIDED PLUS SIZE GREY"));
 	}
-	
-//	Case 2 -> Login Remember
-	@Test (priority = 1)
-	public void testRemember() throws InterruptedException { 
-		myAcc.accRemember("admin1234" , "admincakep");
-		assertTrue(myAcc.getTxtLogin().contains("ERROR"));
-	}
-	
-//	mohon maaf pak sebenernya mau saya tambahkan regist tapi ternyata tidak bisa, karena selalu muncul notif
-//	"ERROR: Access from your IP address has been blocked for security reasons. Please contact the administrator."
-	
-	
-	
 	
 }
