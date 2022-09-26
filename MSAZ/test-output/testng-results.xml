@@ -2,15 +2,15 @@
 <testng-results ignored="0" total="8" passed="0" failed="8" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-25T11:34:08 WIB" name="Default suite" finished-at="2022-09-25T11:34:11 WIB" duration-ms="3195">
+  <suite started-at="2022-09-26T09:06:56 WIB" name="Default suite" finished-at="2022-09-26T09:07:00 WIB" duration-ms="3558">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ujian.ujiankelima.cucumber.RoadRunner@4a83a74a]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-09-25T11:34:08 WIB" name="Default test" finished-at="2022-09-25T11:34:11 WIB" duration-ms="3195">
+    <test started-at="2022-09-26T09:06:56 WIB" name="Default test" finished-at="2022-09-26T09:07:00 WIB" duration-ms="3558">
       <class name="ujian.ujiankelima.cucumber.RoadRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:ujian.ujiankelima.cucumber.RoadRunner@4a83a74a]" started-at="2022-09-25T11:34:08 WIB" name="setUpClass" finished-at="2022-09-25T11:34:09 WIB" duration-ms="644" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:ujian.ujiankelima.cucumber.RoadRunner@4a83a74a]" started-at="2022-09-26T09:06:56 WIB" name="setUpClass" finished-at="2022-09-26T09:06:57 WIB" duration-ms="947" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -21,7 +21,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ujian.ujiankelima.cucumber.RoadRunner@4a83a74a]" started-at="2022-09-25T11:34:09 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-25T11:34:09 WIB" duration-ms="98" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ujian.ujiankelima.cucumber.RoadRunner@4a83a74a]" started-at="2022-09-26T09:06:57 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-26T09:06:57 WIB" duration-ms="88" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -82,7 +82,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ujian.ujiankelima.cucumber.RoadRunner@4a83a74a]" started-at="2022-09-25T11:34:09 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-25T11:34:09 WIB" duration-ms="6" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ujian.ujiankelima.cucumber.RoadRunner@4a83a74a]" started-at="2022-09-26T09:06:57 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-26T09:06:57 WIB" duration-ms="5" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -143,7 +143,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ujian.ujiankelima.cucumber.RoadRunner@4a83a74a]" started-at="2022-09-25T11:34:09 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-25T11:34:09 WIB" duration-ms="5" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ujian.ujiankelima.cucumber.RoadRunner@4a83a74a]" started-at="2022-09-26T09:06:57 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-26T09:06:57 WIB" duration-ms="4" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -204,7 +204,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ujian.ujiankelima.cucumber.RoadRunner@4a83a74a]" started-at="2022-09-25T11:34:09 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-25T11:34:09 WIB" duration-ms="5" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ujian.ujiankelima.cucumber.RoadRunner@4a83a74a]" started-at="2022-09-26T09:06:57 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-26T09:06:57 WIB" duration-ms="4" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -265,7 +265,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ujian.ujiankelima.cucumber.RoadRunner@4a83a74a]" started-at="2022-09-25T11:34:09 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-25T11:34:09 WIB" duration-ms="5" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ujian.ujiankelima.cucumber.RoadRunner@4a83a74a]" started-at="2022-09-26T09:06:57 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-26T09:06:57 WIB" duration-ms="4" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -326,16 +326,16 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ujian.ujiankelima.cucumber.RoadRunner@4a83a74a]" started-at="2022-09-25T11:34:09 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-25T11:34:09 WIB" duration-ms="4" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ujian.ujiankelima.cucumber.RoadRunner@4a83a74a]" started-at="2022-09-26T09:06:57 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-26T09:06:57 WIB" duration-ms="2" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Register user"]]>
+                <![CDATA["Registrasi user"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Register user"]]>
+                <![CDATA["Regis user acc"]]>
               </value>
             </param>
           </params>
@@ -387,16 +387,16 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ujian.ujiankelima.cucumber.RoadRunner@4a83a74a]" started-at="2022-09-25T11:34:09 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-25T11:34:09 WIB" duration-ms="5" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ujian.ujiankelima.cucumber.RoadRunner@4a83a74a]" started-at="2022-09-26T09:06:57 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-26T09:06:57 WIB" duration-ms="3" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Register user"]]>
+                <![CDATA["Registrasi user"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Register user"]]>
+                <![CDATA["Regis user acc"]]>
               </value>
             </param>
           </params>
@@ -448,16 +448,16 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ujian.ujiankelima.cucumber.RoadRunner@4a83a74a]" started-at="2022-09-25T11:34:09 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-25T11:34:09 WIB" duration-ms="3" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ujian.ujiankelima.cucumber.RoadRunner@4a83a74a]" started-at="2022-09-26T09:06:57 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-26T09:06:57 WIB" duration-ms="3" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Register user"]]>
+                <![CDATA["Registrasi user"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Register user"]]>
+                <![CDATA["Regis user acc"]]>
               </value>
             </param>
           </params>
@@ -509,7 +509,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:ujian.ujiankelima.cucumber.RoadRunner@4a83a74a]" started-at="2022-09-25T11:34:09 WIB" name="tearDownClass" finished-at="2022-09-25T11:34:11 WIB" duration-ms="2333" status="FAIL">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:ujian.ujiankelima.cucumber.RoadRunner@4a83a74a]" started-at="2022-09-26T09:06:57 WIB" name="tearDownClass" finished-at="2022-09-26T09:07:00 WIB" duration-ms="2414" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "ujian.ujiankeempat.nopcommerce.drivers.DriverSingleton.driver" is null]]>
@@ -517,7 +517,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "ujian.ujiankeempat.nopcommerce.drivers.DriverSingleton.driver" is null
 at ujian.ujiankeempat.nopcommerce.drivers.DriverSingleton.closeObjectInstance(DriverSingleton.java:42)
-at ujian.ujiankelima.cucumber.DemoQAHooks.closeBrowser(DemoQAHooks.java:62)
+at ujian.ujiankelima.cucumber.DemoQAHooks.closeBrowser(DemoQAHooks.java:64)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->

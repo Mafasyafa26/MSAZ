@@ -1,8 +1,8 @@
 package ujian.ujiankelima.cucumber;
 
 public enum DemoQAShop {
-	T1("Login invalid"),
-	T2("Register invalid");
+	T1("Login user"),
+	T2("Registrasi user");
 	
 	private String testName;
 	

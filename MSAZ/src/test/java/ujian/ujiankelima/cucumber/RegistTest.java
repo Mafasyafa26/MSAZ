@@ -7,12 +7,9 @@ import org.openqa.selenium.WebDriver;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import ujian.ujiankeempat.nopcommerce.util.Constants;
-import ujian.ujiankelima.cucumber.RegistTest;
 
 public class RegistTest {
 	public static WebDriver driver;
@@ -30,8 +27,9 @@ public class RegistTest {
 	    extentTest.log(LogStatus.PASS, "User go to demo qa register page");
 	}
 
-	@And("^User register input (.*) and (.*) and (.*)$")
-	public void user_input_username_email_and_password(String username, String email, String password) {
+//	@And("^User register input (.*) and (.*) and (.*)  orx k$")
+	@When("^User register (.*) (.*) (.*) orx k$")
+	public void user_register_username_email_password_orx_k(String username, String email, String password) {
 		System.out.println("username: " + username);
 		System.out.println("email: " + email);
 	    System.out.println("password: " + password);
@@ -39,7 +37,7 @@ public class RegistTest {
 	    extentTest.log(LogStatus.PASS, "User register input username and email and password");
 	}
 
-	@And("User click register button")
+	@When("User click register button")
 	public void user_click_register_button() {
 	    regist.clickRegist();
 	    extentTest.log(LogStatus.PASS, "User click register button");
@@ -47,8 +45,10 @@ public class RegistTest {
 
 	@Then("valid validation")
 	public void valid_validation() {
-	    regist.getTxtError();
-	    assertTrue(regist.getTxtError().contains("ERROR"));
+	    String strK = regist.getTxtError();
+	    System.out.println("INVALID REGISTRATION "+strK);
+//	    assertTrue(strK.contains("ERROR"));
+	    assertTrue(strK.contains("Error"));
 	    extentTest.log(LogStatus.PASS, "valid validation");
 	}
 }

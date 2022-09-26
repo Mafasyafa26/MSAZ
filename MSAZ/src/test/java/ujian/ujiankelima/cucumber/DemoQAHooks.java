@@ -22,7 +22,8 @@ public class DemoQAHooks {
 	public static ExtentTest extentTest;
 	public static ExtentReports reports = new ExtentReports("target/ujiankelima/extentreport/ujiankelima-demoqa-outline-xr.html");
 	private static DemoQAShop[] tests = DemoQAShop.values();
-	private static final int[] DATA_OUTLINE = {5, 5};
+//	private static final int[] DATA_OUTLINE = {5, 3};
+	private static final int[] DATA_OUTLINE = {3};
 	private String testReport = "";
 	
 	@Before
@@ -32,12 +33,13 @@ public class DemoQAHooks {
 		driver = DriverSingleton.getDriver();
 		testReport = tests[Constants.testCount].getTestName();
 		extentTest = reports.startTest(testReport);
-		Constants.countOutline++;
+		
 		if(Constants.countOutline==DATA_OUTLINE[Constants.testCount])
 		{
 			Constants.countOutline=0;
 			Constants.testCount++;
 		}
+		Constants.countOutline++;
 	}
 	
 	@AfterStep

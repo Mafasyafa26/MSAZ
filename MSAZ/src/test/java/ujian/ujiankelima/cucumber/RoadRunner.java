@@ -4,8 +4,10 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-features = {"src/test/resources/ujian/ujiankelima/01Login.feature",
-		"src/test/resources/ujian/ujiankelima/02Regist.feature"},
+features = {
+		"src/test/resources/ujian/ujiankelima/01Login.feature",
+		"src/test/resources/ujian/ujiankelima/02Regist.feature"
+		},
 glue = "ujian.ujiankelima.cucumber",
 monochrome=true,
 plugin = {"pretty","html:target/ujian/ujiankelima/UjianKelima.html",
@@ -14,4 +16,3 @@ plugin = {"pretty","html:target/ujian/ujiankelima/UjianKelima.html",
 public class RoadRunner extends AbstractTestNGCucumberTests{
 	
 }
-

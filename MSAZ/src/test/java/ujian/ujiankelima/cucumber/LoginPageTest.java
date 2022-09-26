@@ -8,6 +8,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 import io.cucumber.java.en.And;
+
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import ujian.ujiankeempat.nopcommerce.util.Constants;
@@ -28,8 +29,8 @@ public class LoginPageTest {
 	    extentTest.log(LogStatus.PASS, "User open DEMOQA Web Browser");
 	}
 
-	@And("User login invalid input (.*) and (.*)$")
-	public void user_login_invalid_username_and_password(String username, String password){
+	@And("User login invalid input (.*) and (.*) or A$")
+	public void user_login_invalid_input_username_and_password(String username, String password){
 		System.out.println("username: " + username);
 	    System.out.println("password: " + password);
 	    loginPage.loginInvalid(username, password);

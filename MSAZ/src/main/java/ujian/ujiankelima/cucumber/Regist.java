@@ -1,9 +1,13 @@
 package ujian.ujiankelima.cucumber;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import ujian.ujiankeempat.nopcommerce.drivers.DriverSingleton;
 import ujian.ujiankeempat.nopcommerce.util.Constants;
@@ -33,7 +37,8 @@ public class Regist {
 	@FindBy(xpath = "//button[@name='register']")
 	private WebElement btnReg;
 	
-	@FindBy(xpath = "//body[@id='error-page']/div/strong")
+//	@FindBy(xpath = "//body[@id='error-page']/div/strong")
+	@FindBy(xpath = "//strong[normalize-space()='Error:']")
 	private WebElement txtErr;
 	
 	@FindBy(xpath = "//h1[contains(text(),'Your access to this site has been temporarily limi')]")
@@ -54,11 +59,15 @@ public class Regist {
 	}
 	
 	public void clickRegist() {
-		btnReg.click();
+		new WebDriverWait(driver, Duration.ofSeconds(10))
+		.until(ExpectedConditions.visibilityOf(btnReg)).click(); 
+//		btnReg.click();
 	}
 	
 	public String getTxtError() {
-		return txtErr.getText();
+//		return txtErr.getText();
+		return new WebDriverWait(driver, Duration.ofSeconds(10))
+				.until(ExpectedConditions.visibilityOf(txtErr)).getText(); 
 	}
 
 }
